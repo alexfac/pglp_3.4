@@ -1,6 +1,8 @@
 package uvsq21603110;
 
-public class SimplePrinter implements faxPrinter, copyPrinter, scanPrinter, printPrinter {
+import java.util.ArrayList;
+
+public class SimplePrinter implements faxPrinter, copyPrinter, scanPrinter, printPrinter, ListfaxPrinter {
 
     @Override
     public void fax(){}
@@ -13,4 +15,7 @@ public class SimplePrinter implements faxPrinter, copyPrinter, scanPrinter, prin
 
     @Override
     public void print(){}
+
+    @Override
+    public void Listfax(ArrayList<Document> Doc){}
 }
